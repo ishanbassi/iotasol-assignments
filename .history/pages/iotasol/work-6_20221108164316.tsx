@@ -1,0 +1,28 @@
+export default function App() {
+    return (
+        <>
+            <h2>Adding new TD Dynamically to a Table</h2>
+            <form>
+                <fieldset>
+                    <legend>Enter the details</legend>
+                    
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="full name" id="name" />
+
+                    <label htmlFor="email">email</label>
+                    <input type="email" name="email" id="email" />
+
+                    <label htmlFor="city">City</label>
+                    <input type="text" name="city" id="city" />
+
+                    <label htmlFor="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" />
+
+                    
+                    
+
+                </fieldset>
+            </form>
+        </>
+    )
+}
