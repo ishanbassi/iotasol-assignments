@@ -35,9 +35,6 @@ export default function Home() {
         <li>
           <Link href="/iotasol/work-9">Javascript Assignment Work 9</Link>
         </li>
-        <li>
-          <Link href="/iotasol/work-10">Javascript Assignment Work 10</Link>
-        </li>
       </ul>
      
     </>
