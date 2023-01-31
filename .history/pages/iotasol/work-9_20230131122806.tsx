@@ -11,9 +11,11 @@ export default function App() {
         setDropDownValues(arr)
         dropDownValuesRef.current = arr
     }, [])
-    const updateList = (e,j,i) => {
-        
+    const updateList = (e:MouseEvent) => {
+        console.log('his')
         let arrCopy = dropDownValuesRef.current.map(arr => {
+
+            console.log(e.target.value)
             return arr.filter(val => val !== e.target.value)
         })
         setDropDownValues(arrCopy)
@@ -24,11 +26,11 @@ export default function App() {
             <h2>Dropboxes</h2>
             {dropDownValues.map((val,j) => {
                 return(
-                    <select name="dropbox" key={j} >
+                    <select name="dropbox" key={j} onChange={updateList}>
                     { val.map((v, i) => {
                         
                         return (
-                                <option key={v} value={v} onClick={e => updateList(e,j,i)}>{v}</option>
+                                <option key={v} value={v} >{v}</option>
                         )
                     })}
                     </select>
